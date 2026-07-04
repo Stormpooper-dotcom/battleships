@@ -1,0 +1,6 @@
+# Default config for fleets when NOT using 'play fast'. (Name, Length, Number)
+
+Carrier,5,1
+Battleship,4,1
+Destroyer,3,2
+Patrol Boat,2,3

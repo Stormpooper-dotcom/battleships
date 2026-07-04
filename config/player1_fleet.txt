@@ -1,0 +1,6 @@
+# Fleet layout for Player 1 when USING 'play fast'. (Name, x, y, length, orientation)
+
+Carrier,1,1,5,h
+Battleship,4,3,4,v
+Destroyer,0,5,3,h
+Patrol Boat,7,0,2,v
