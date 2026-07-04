@@ -3,3 +3,5 @@ board is a 2d list
 2 boards
 - hit board: shows your hits and misses. 0 = nothing, 1 = hit, -1 = misses
 - ship board: shows your ships and the other player's guesses. 0 = nothing, 1 = your ship, -1 =  other player's guess
+
+613 lines of python code
