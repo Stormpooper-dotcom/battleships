@@ -91,18 +91,10 @@ class Player:
         return self.hit_board[y][x] == 0
     
     def has_lost(self) -> bool:
-        ship_count = 0
         for row in self.ship_board:
             if 1 in row:
-                ship_count += 1
-
-        if len(self.ships) > 0 and ship_count == 0:
-            return True
-        
-        if len(self.ships) == 0:
-            return False
-        
-        return len(self.ships) == 0
+                return False
+        return True
     
     def __str__(self):
         # hit_board: 0=nothing, 1=hit (X), 2=sunk (#), -1=miss(M)
