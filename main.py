@@ -2,6 +2,12 @@ import argparse
 import sys
 from engine.modes import local_match, ai_match
 
+import os
+if os.name == "nt":
+    import ctypes
+    kernel32 = ctypes.windll.kernel32
+    kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)  # Enable ANSI escape codes on Windows
+
 def main():
     parser = argparse.ArgumentParser(description="Battleships Game")
 
