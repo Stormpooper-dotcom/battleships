@@ -1,7 +1,7 @@
 from abc import ABC, ABCMeta, abstractmethod
 from engine.player import Player
 from ai.bot import BattleshipAI
-from engine.ui import get_ship_placement
+from ui.textui import get_ship_placement
 
 class Controller(ABC):
     def __init__(self, player_obj: Player) -> None:
